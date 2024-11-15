@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adivina el Número</title>
+	<style type="text/css">
+		body{
+			background: repeating-radial-gradient(white,pink);
+		}
+	</style>
+</head>
+<body>
+	<label><center><i>SEA BIENVENIDO A LA PAGINA DE ALEX FERNANDO AYAVIRI MICO</i></center></label>
+	<center><img src="ima/foto.jpeg"></center>
+  <h2><i>AQUI UN PEQUEÑO JUEGUITO PARA QUE SE ENTRETENGA</i></h2>	
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        input {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #mensaje {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Adivina el Número!</h1>
+    <p>He pensado en un número entre 1 y 10. ¿Cuál crees que es?</p>
+    <input type="number" id="entrada" min="1" max="10" placeholder="Introduce un número entre 1 y 10">
+    <button onclick="adivinar()">Adivina</button>
+    <div id="mensaje"></div>
+
+    <script>
+
+        function adivinar() {
+            const entrada = document.getElementById("entrada").value;
+     
+            if (entrada == "7") {
+                alert("correcto")
+            } else {
+                alert("numero incorrecto intentelo nuevamente")
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
